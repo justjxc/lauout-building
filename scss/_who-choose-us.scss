@@ -1,0 +1,135 @@
+.who-choose-us {
+  height: 550px;
+  background-color: #f8fdfe;
+  & .container-b {
+    // margin: 0 0 0 135px;
+    // max-width: 1305px;
+
+    height: 100%;
+    max-width: 1440px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__column {
+    &--left {
+      // width: 48.4%;
+      // padding-right: 36px;
+      // width: 632px;
+      // padding: 93px 36px 100px 0;
+      width: 767px;
+      padding-left: 135px;
+      padding-right: 36px;
+    }
+
+    &--right {
+      // width: 51.6%;
+      width: 673px;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    margin-top: 93px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    color: #222222;
+  }
+
+  &__paragraph {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+  }
+
+  &__read-more-btn {
+    margin-top: 40px;
+    width: 190px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    @include button(6px);
+  }
+
+  &__read-more-btn-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__read-more-btn-arrow {
+    width: 8px;
+    height: 14px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+  }
+}
+
+@media (max-width: 1440px) {
+  .who-choose-us {
+    & .container-b {
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+
+    &__column {
+      &--left {
+        padding-left: 0;
+        padding-right: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .who-choose-us {
+    height: fit-content;
+    text-align: center;
+
+    &__column {
+      &--left {
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: fit-content;
+      }
+
+      &--right {
+        width: fit-content;
+        height: fit-content;
+      }
+    }
+
+    &__content {
+      flex-direction: column;
+      gap: 36px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .who-choose-us {
+    &__title {
+      margin-top: 76px;
+    }
+  }
+}

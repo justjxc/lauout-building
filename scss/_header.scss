@@ -1,0 +1,171 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  height: 130px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+    transition: 0.3s;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+  }
+
+  &__list-item {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #02012b;
+      transition: 0.3s;
+      transform: scale(0);
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+
+  &__link {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #02012b;
+  }
+
+  &__login-btn {
+    width: 96px;
+    height: 40px;
+    font-size: 16px;
+    @include button(6px);
+  }
+
+  &--fixed {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+  }
+}
+
+.hamburger-btn {
+  width: 40px;
+  height: 30px;
+  display: none; /* flex */
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__bar {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: 0.3s;
+
+    &:nth-child(1) {
+      transform-origin: left;
+    }
+
+    &:nth-child(2) {
+      transform-origin: center;
+    }
+
+    &:nth-child(3) {
+      transform-origin: left;
+    }
+  }
+}
+
+@media (max-width: 975px) {
+  .header {
+    gap: 50px;
+    &__content {
+      gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .header {
+    position: relative;
+
+    &__content {
+      flex-direction: column-reverse;
+      width: 100%;
+      gap: 0;
+      position: absolute;
+      left: 0;
+      top: 130px;
+      z-index: 1000;
+      display: none; /* flex */
+
+      &--show {
+        display: flex;
+      }
+    }
+
+    &__menu {
+      width: 100%;
+    }
+
+    &__list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__list-item {
+      width: 100%;
+      height: 100px;
+      padding: 10px 40px;
+      background-color: #19bce4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover::after {
+        display: none;
+      }
+    }
+
+    &__login-btn {
+      height: 100px;
+      width: 100%;
+      border-radius: 0;
+    }
+
+    &__list-item:not(:last-child),
+    &__login-btn {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    &__link {
+      color: #fff;
+
+      &:active,
+      &:visited {
+        color: #fff;
+      }
+    }
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+}

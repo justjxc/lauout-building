@@ -1,0 +1,130 @@
+.options {
+  height: 800px;
+  background: #f8fdfe;
+  padding-top: 75px;
+  padding-bottom: 76px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    color: #222222;
+  }
+
+  &__content {
+    margin-top: 68px;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 51px;
+  }
+
+  &__column {
+    height: 100%;
+    width: 50%;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__list {
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+
+  &__list-item {
+    height: 118px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    border: 0.5px solid rgba(25, 188, 228, 0.2);
+    background-color: #fff;
+  }
+
+  &__list-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+  }
+
+  &__list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+  }
+
+  &__list-paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+  }
+}
+
+@media (max-width: 1000px) {
+  .options {
+    height: fit-content;
+    &__content {
+      height: fit-content;
+      flex-direction: column-reverse;
+    }
+
+    &__column {
+      width: 100%;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__list-item {
+      height: fit-content;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .options {
+    &__title {
+      text-align: center;
+    }
+
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .options {
+    &__title {
+      font-size: 34px;
+    }
+
+    &__list-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__list-img {
+      width: 80px;
+    }
+
+    &__list-paragraph {
+      margin-top: 10px;
+    }
+  }
+}

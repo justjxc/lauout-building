@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container-b">
+        <div class="logo">
+          <img src="./img/logo.png" alt="Logo" class="logo-img" />
+        </div>
+
+        <div class="header__content">
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__link" href="#">Home</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#hero">Services</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#about-us">About Us</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#options">Properties</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="header__login-btn">
+            <span class="header__login-btn-text">Log in</span>
+          </button>
+        </div>
+
+        <div class="hamburger-btn">
+          <div class="hamburger-btn__bar"></div>
+          <div class="hamburger-btn__bar"></div>
+          <div class="hamburger-btn__bar"></div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section id="hero" class="hero">
+          <div class="hero__content container-b">
+            <h1 class="hero__title">Find Your Dream House</h1>
+            <p class="hero__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra posuere sem purus enim eleifend habitant arcu, sed.
+            </p>
+            <div class="search-wrap">
+              <form action="#" class="search-wrap__form">
+                <div class="search-wrap__select">
+                  <button class="search-wrap__btn">
+                    <div class="search-wrap__label">
+                      <span class="search-wrap__name">Location</span>
+
+                      <img class="search-wrap__chevron" src="./img/svg/chevron-down.svg" alt="Chevron down" />
+                    </div>
+
+                    <div class="search-wrap__placeholder">California</div>
+                  </button>
+
+                  <div class="search-wrap__options">
+                    <div class="search-wrap__option search-wrap__option--selected" data-value="0">California</div>
+                    <div class="search-wrap__option" data-value="1">Location 2</div>
+                    <div class="search-wrap__option" data-value="2">Location 3</div>
+                    <div class="search-wrap__option" data-value="3">Location 4</div>
+                    <div class="search-wrap__option" data-value="4">Location 5</div>
+                    <div class="search-wrap__option" data-value="5">Location 6</div>
+                  </div>
+                </div>
+
+                <div class="search-wrap__select">
+                  <button class="search-wrap__btn">
+                    <div class="search-wrap__label">
+                      <span class="search-wrap__name">Properties</span>
+
+                      <img class="search-wrap__chevron" src="./img/svg/chevron-down.svg" alt="Chevron down" />
+                    </div>
+
+                    <div class="search-wrap__placeholder">Delux</div>
+                  </button>
+
+                  <div class="search-wrap__options">
+                    <div class="search-wrap__option search-wrap__option--selected" data-value="0">Delux</div>
+                    <div class="search-wrap__option" data-value="1">Property 2</div>
+                    <div class="search-wrap__option" data-value="2">Property 3</div>
+                    <div class="search-wrap__option" data-value="3">Property 4</div>
+                  </div>
+                </div>
+
+                <div class="search-wrap__select">
+                  <button class="search-wrap__btn">
+                    <div class="search-wrap__label">
+                      <span class="search-wrap__name">Price</span>
+
+                      <img class="search-wrap__chevron" src="./img/svg/chevron-down.svg" alt="Chevron down" />
+                    </div>
+
+                    <div class="search-wrap__placeholder">$10,000 - $12,0000</div>
+                  </button>
+
+                  <div class="search-wrap__options">
+                    <div class="search-wrap__option search-wrap__option--selected" data-value="0">$10,000 - $12,0000</div>
+                    <div class="search-wrap__option" data-value="1">Price 2</div>
+                    <div class="search-wrap__option" data-value="2">Price 3</div>
+                    <div class="search-wrap__option" data-value="3">Price 4</div>
+                    <div class="search-wrap__option" data-value="4">Price 5</div>
+                    <div class="search-wrap__option" data-value="5">Price 6</div>
+                    <div class="search-wrap__option" data-value="6">Price 7</div>
+                    <div class="search-wrap__option" data-value="7">Price 8</div>
+                  </div>
+                </div>
+
+                <button class="search-wrap__submit">
+                  <span class="search-wrap__submit-text">Search</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section id="about-us" class="about-us">
+          <div class="about-us__content container-m">
+            <div class="about-us__column about-us__column--left">
+              <img src="./img/about-us-bg.jpg" alt="Interior examples" class="about-us__img" />
+            </div>
+            <div class="about-us__column about-us__column--right">
+              <h2 class="about-us__title">About Us</h2>
+
+              <p class="about-us__hook">We are Specializing in interior Improvments</p>
+
+              <p class="about-us__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra posuere sem purus enim eleifend habitant arcu, sed.
+              </p>
+
+              <div class="about-us__pros">
+                <div class="about-us__pros-column about-us__pros-column--left">
+                  <img src="./img/svg/about-us-img-1.svg" alt="Headphones" class="about-us__pros-img" />
+
+                  <h3 class="about-us__pros-title">Free Consulatation</h3>
+
+                  <p class="about-us__pros-paragraph">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+                </div>
+
+                <div class="about-us__pros-column about-us__pros-column--right">
+                  <img src="./img/svg/about-us-img-2.svg" alt="Handshake in front of the workers" class="about-us__pros-img" />
+
+                  <h3 class="about-us__pros-title">Best Team Members</h3>
+
+                  <p class="about-us__pros-paragraph">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+                </div>
+              </div>
+
+              <button class="about-us__explore-btn">
+                <span class="about-us__explore-btn-text"> Explore Now </span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="options" class="options">
+          <div class="container-m">
+            <h2 class="options__title">What are you looking for?</h2>
+
+            <div class="options__content">
+              <div class="options__column options__column--left">
+                <img src="./img/options-bg.jpg" alt="Buildings" class="options__img" />
+              </div>
+
+              <div class="options__column options__column--right">
+                <ul class="options__list">
+                  <li class="options__list-item">
+                    <img src="./img/svg/options-img-1.svg" alt="House icon" class="options__list-img" />
+                    <div class="options__list-content">
+                      <h3 class="options__list-title">Family House</h3>
+                      <p class="options__list-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus
+                      </p>
+                    </div>
+                  </li>
+                  <li class="options__list-item">
+                    <img src="./img/svg/options-img-2.svg" alt="Apartment icon" class="options__list-img" />
+                    <div class="options__list-content">
+                      <h3 class="options__list-title">Apartment</h3>
+                      <p class="options__list-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus
+                      </p>
+                    </div>
+                  </li>
+                  <li class="options__list-item">
+                    <img src="./img/svg/options-img-3.svg" alt="Studio icon" class="options__list-img" />
+                    <div class="options__list-content">
+                      <h3 class="options__list-title">Studio & Offices</h3>
+                      <p class="options__list-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus
+                      </p>
+                    </div>
+                  </li>
+                  <li class="options__list-item">
+                    <img src="./img/svg/options-img-4.svg" alt="Villa icon" class="options__list-img" />
+                    <div class="options__list-content">
+                      <h3 class="options__list-title">Villa & Condo</h3>
+                      <p class="options__list-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="places" class="places">
+          <div class="container-b">
+            <h2 class="places__title">Most Popular Places</h2>
+
+            <p class="places__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="places__content">
+              <div class="places__column places__column--left">
+                <figure class="places__card">
+                  <img src="./img/places-img-1.jpg" alt="Image of Bangladesh" class="places__card-img" />
+
+                  <figcaption class="places__card-caption">
+                    <h3 class="places__card-title">Bangladesh</h3>
+
+                    <p class="places__card-properties">50 Properties</p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="places__column places__column--right">
+                <figure class="places__card">
+                  <img src="./img/places-img-2.jpg" alt="Image of Japan" class="places__card-img" />
+
+                  <figcaption class="places__card-caption">
+                    <h3 class="places__card-title">Japan</h3>
+
+                    <p class="places__card-properties">50 Properties</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="places__card">
+                  <img src="./img/places-img-3.jpg" alt="Image of Malaysia" class="places__card-img" />
+
+                  <figcaption class="places__card-caption">
+                    <h3 class="places__card-title">Malaysia</h3>
+
+                    <p class="places__card-properties">50 Properties</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="places__card">
+                  <img src="./img/places-img-4.jpg" alt="Image of London" class="places__card-img" />
+
+                  <figcaption class="places__card-caption">
+                    <h3 class="places__card-title">London</h3>
+
+                    <p class="places__card-properties">50 Properties</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="places__card">
+                  <img src="./img/places-img-5.jpg" alt="Image of India" class="places__card-img" />
+
+                  <figcaption class="places__card-caption">
+                    <h3 class="places__card-title">India</h3>
+
+                    <p class="places__card-properties">50 Properties</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="who-choose-us">
+          <div class="container-b">
+            <div class="who-choose-us__content">
+              <div class="who-choose-us__column who-choose-us__column--left">
+                <h2 class="who-choose-us__title">Who Choose Us?</h2>
+
+                <p class="who-choose-us__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio laoreet sit neque sagittis. Gravida viverra at auctor sed aliquam. Sed magna
+                  eros lectus amet, viverra. Ultrices diam, volutpat sit ut feugiat semper interdum dapibus. Et malesuada tempus lacus at ornare gravida ornare
+                  nulla dui. Velit tellus elit consectetur dui vel convallis eu in lectus. Vitae id est, suspendisse suspendisse.
+                </p>
+
+                <button class="who-choose-us__read-more-btn">
+                  <span class="who-choose-us__read-more-btn-text"> Read more </span>
+
+                  <img class="who-choose-us__read-more-btn-arrow" src="./img/svg/arrow-right.svg" alt="arrow icon" />
+                </button>
+              </div>
+
+              <div class="who-choose-us__column who-choose-us__column--right">
+                <img src="./img/who-choose-us-bg.png" alt="A man and a woman look at papers" class="who-choose-us__img" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="container-b">
+            <h2 class="reviews__title">What People Say</h2>
+
+            <p class="reviews__paragraph">Lorem ipsum dolor sit amet, consectetur</p>
+
+            <div class="reviews__content">
+              <div class="reviews__card">
+                <img src="./img/review-img-1.png" alt="Reviewer's photo" class="reviews__card-img" />
+
+                <h3 class="reviews__card-name">Williamsons</h3>
+
+                <div class="reviews__card-stars">
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg class="reviews__card-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg class="reviews__card-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+                </div>
+
+                <p class="reviews__card-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae
+                  varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant.
+                </p>
+              </div>
+
+              <div class="reviews__card">
+                <img src="./img/review-img-2.png" alt="Reviewer's photo" class="reviews__card-img" />
+
+                <h3 class="reviews__card-name">Farhad Reja</h3>
+
+                <div class="reviews__card-stars">
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg class="reviews__card-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+                </div>
+
+                <p class="reviews__card-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae
+                  varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant.
+                </p>
+              </div>
+
+              <div class="reviews__card">
+                <img src="./img/review-img-3.png" alt="Reviewer's photo" class="reviews__card-img" />
+
+                <h3 class="reviews__card-name">Peter sams</h3>
+
+                <div class="reviews__card-stars">
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+
+                  <svg
+                    class="reviews__card-star reviews__card-star--active"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.31191 1.0868C7.57303 0.484638 8.42697 0.484639 8.68809 1.0868L10.0917 4.32364C10.309 4.82487 10.7817 5.16829 11.3256 5.22011L14.8377 5.55478C15.4911 5.61704 15.755 6.42919 15.263 6.86361L12.6183 9.19875C12.2088 9.56036 12.0282 10.116 12.147 10.6493L12.914 14.093C13.0567 14.7336 12.3659 15.2355 11.8007 14.9019L8.76259 13.1082C8.29213 12.8305 7.70787 12.8305 7.23741 13.1082L4.19931 14.9019C3.63412 15.2355 2.94326 14.7336 3.08595 14.093L3.85298 10.6493C3.97175 10.116 3.79121 9.56036 3.38167 9.19875L0.736993 6.86361C0.244995 6.42919 0.50888 5.61704 1.16226 5.55478L4.67441 5.22011C5.21827 5.16829 5.69095 4.82487 5.9083 4.32364L7.31191 1.0868Z"
+                      fill="#D2D1D1"
+                    />
+                  </svg>
+                </div>
+
+                <p class="reviews__card-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae
+                  varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="footer" class="footer">
+        <div class="footer__daily-update-wrap">
+          <div class="container-m">
+            <div class="footer__daily-update">
+              <h2 class="footer__daily-update-title">For Daily Update Subscribe Now</h2>
+
+              <form class="footer__daily-update-form">
+                <input type="email" name="email" placeholder="Enter Your Mail.." class="footer__daily-update-email" />
+
+                <!-- <input type="submit" value="Subscribe" class="footer__daily-update-submit" /> -->
+                <button type="submit" class="footer__daily-update-submit">
+                  <span class="footer__daily-update-submit-text">Subscribe</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__content-wrap">
+          <div class="container-b">
+            <div class="footer__content">
+              <div class="footer__info">
+                <div class="logo">
+                  <img src="./img/logo.png" alt="Logo" class="logo-img" />
+                </div>
+
+                <p class="footer__info-paragraph">
+                  Lorem ipsum dolor sit amet, consectet adipiscing elit. Quam turpis sed ut fam tortor pharetra. Lorem auctor congue pellentesque facilisis diam
+                </p>
+
+                <div class="footer__info-socials">
+                  <img src="./img/svg/facebook-icon.svg" alt="Facebook icon" class="footer__social-icon footer__facebook-icon" />
+                  <img src="./img/svg/twitter-icon.svg" alt="Twitter icon" class="footer__social-icon footer__twitter-icon" />
+                  <img src="./img/svg/instagram-icon.svg" alt="Instagram icon" class="footer__social-icon footer__instagram-icon" />
+                  <img src="./img/svg/linked-in-icon.svg" alt="Linked In icon" class="footer__social-icon footer__linked-in-icon" />
+                </div>
+              </div>
+
+              <div class="footer__grid">
+                <div class="footer__cell">
+                  <h3 class="footer__title">Home</h3>
+
+                  <ul class="footer__list">
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Process</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Listing</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Popular Property</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Out Agents</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Testimonial</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer__cell">
+                  <h3 class="footer__title">Servies</h3>
+
+                  <ul class="footer__list">
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Site map</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Property type</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Terms and conditions</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Privacy policy</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer__cell">
+                  <h3 class="footer__title">About</h3>
+
+                  <ul class="footer__list">
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">About us</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Who choose us?</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Events</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <a href="#" class="footer__link">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer__cell">
+                  <h3 class="footer__title">Contact</h3>
+
+                  <ul class="footer__list">
+                    <li class="footer__item">
+                      <img src="./img/svg/phone-icon.svg" alt="Phone icon" class="footer__icon" />
+
+                      <a href="#" class="footer__link">+888 561 258</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <img src="./img/svg/gmail-icon.svg" alt="Gmail icon" class="footer__icon" />
+
+                      <a href="#" class="footer__link">webmaile@gmail.com</a>
+                    </li>
+
+                    <li class="footer__item">
+                      <img src="./img/svg/google-play-icon.svg" alt="Google play icon" class="footer__icon" />
+
+                      <a href="#" class="footer__link">Google play</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/smoothScroll.js"></script>
+    <script src="./js/search.js"></script>
+  </body>
+</html>
